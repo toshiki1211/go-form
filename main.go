@@ -65,7 +65,7 @@ func (d *FormData) confirm(w http.ResponseWriter, r *http.Request) {
     }
 }
 
-func  (d *FormData) complate(w http.ResponseWriter, r *http.Request) {
+func (d *FormData) complate(w http.ResponseWriter, r *http.Request) {
 	d.ValidateError = false
 
 	d.Username = strings.TrimSpace(r.FormValue("username"))
